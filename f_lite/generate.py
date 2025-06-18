@@ -79,7 +79,7 @@ def generate_images(
 
     # Generate image
     console.print(f"Generating {num_images} image(s) with prompt: [italic]{prompt}[/italic]")
-    with Tracer(output_file="model1.trace"):
+    with Tracer(output="model1.trace"):
         output = pipe(
             prompt=prompt,
             negative_prompt=negative_prompt,
